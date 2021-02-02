@@ -14,3 +14,8 @@ https://www.typescriptlang.org/tsconfig#paths
 - [React native web rewrites aliases for babel config depending on env](https://github.com/vercel/next.js/tree/master/examples/with-react-native-web)
 - May need to transpile the sibling directory using next-plugin-transpile-modules plugin if we use npm link
   [[1]](https://github.com/vercel/next.js/issues/706) [[2]](https://www.npmjs.com/package/next-transpile-modules)
+
+## Notes
+
+Most likely the simplest option is to just have one node_modules in the root directory which list all deps.
+Each subfolder can have it's npm commands e.g. `npm run dev`.
